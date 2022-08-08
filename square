@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+enter value<input id="num">
+<br>
+<button onclick="square()">square</button>
+<p id="res"></p>
+<script>
+function square(){
+num=document.getElementById("num").value;
+document.getElementById("res").innerHTML=num*num
+}
+</script>
+</body>
+</html>
