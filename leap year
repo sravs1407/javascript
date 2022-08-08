@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+enter year<input id="year">
+<br><br>
+<button onclick="leap()">leap year</button>
+<p1 id="res"></p1>
+<script>
+function leap(){
+num=document.getElementById("year").value;
+if((num%4==0 && num%400!=0) || (num%100==0 && num%400==0))
+{
+document.getElementById("res").innerHTML="given year is leap year";
+}else{
+document.getElementById("res").innerHTML="given year is not leap year";
+}
+}
+</script>
+</body>
+</html>
