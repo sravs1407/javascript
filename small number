@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+enter number of values<input id="num">
+<br>
+<button onclick="small()">small</button>
+<p id="res"></p>
+<script>
+function small(){
+var a=new Array();
+var i,num;
+num=document.getElementById("num").value
+for(i=0;i<num;i++)
+{
+a[i] = prompt('Enter array Element ' + (i+1));
+}
+var s=a[0];
+for(i=1;i<num;i++)
+{
+if (a[i]<s){
+s=a[i];
+}
+}
+document.getElementById("res").innerHTML=s
+}
+</script>
+</body>
+</html>
